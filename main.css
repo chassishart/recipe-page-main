@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  --rose-bg: hsl(330, 100%, 98%);
+  --rose-text: hsl(332, 51%, 32%);
+  --stone-head-bold: hsl(24, 5%, 18%);
+  --stone-haed: hsl(14, 45%, 36%);
+  --stone-para: hsl(30, 10%, 34%);
+}
+
+body {
+  background-color: var(--rose-bg);
+}
+
+main {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "young serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+p {
+  font-size: 16px;
+  font-family: "Outfit";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--stone-para);
+}
+
+img {
+  height: 150px;
+  width: 100%;
+}
+h1 {
+  margin-top: 30px;
+  font-family: "young serif";
+  font-size: 30px;
+  color: var(--stone-head-bold);
+}
+h3 {
+  color: var(--rose-text);
+  font-family: "Outfit";
+  margin-bottom: 15px;
+}
+section {
+  padding: 0 32px;
+}
+#section2 > div {
+  background-color: var(--rose-bg);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 16px;
+}
+#section2 ul {
+  font-family: "outfit";
+  color: var(--stone-para);
+  list-style-position: inside;
+}
+#section2 ul li {
+  padding: 6px 2px 4px 4px;
+}
+h2 {
+  color: var(--stone-haed);
+  margin-bottom: 10px;
+}
+#section3 ul {
+  list-style-position: inside;
+  color: var(--stone-para);
+  font-weight: 500;
+  font-family: "outfit";
+}
+#section3 ul li {
+  padding: 6px 2px 4px 4px;
+}
+#section4 ol {
+  font-weight: 500;
+  font-family: "outfit";
+  color: var(--stone-para);
+  margin-left: 22px;
+}
+#section4 ol li {
+  padding: 6px 2px 4px 14px;
+}
+#section4 li::marker {
+  color: var(--stone-haed);
+}
+table {
+  border-collapse: collapse;
+  font-family: "outfit";
+  color: var(--stone-para);
+  font-weight: 500;
+  width: 100%;
+}
+th,
+td {
+  padding: 10px 2px 10px 4px;
+  width: 50%;
+  border-bottom: 1px solid var(--stone-haed);
+}
+
+th {
+  color: var(--rose-text);
+  text-align: left;
+}
+#section5 {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    padding: 16px 0;
+  }
+  main {
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  header,
+  section {
+    padding: 0 32px;
+  }
+  header {
+    margin-top: 30px;
+  }
+  img {
+    height: 250px;
+    border-radius: 10px;
+  }
+}
